@@ -1,0 +1,31 @@
+.app-container {
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+    transition: background-color 0.6s ease-in-out;
+  }
+  
+  /* Mood-based background colors */
+  .app-container.Happy { background: #fff59d; }
+  .app-container.Sad { background: #90caf9; }
+  .app-container.Romantic { background: #f8bbd0; }
+  .app-container.Hyped { background: #ffcc80; }
+  .app-container.Relaxed { background: #a5d6a7; }
+  
+  .typing-animation {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: typing 3s steps(20, end), blink .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  
